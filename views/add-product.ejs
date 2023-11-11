@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Product</title>
+</head>
+<body>
+<div class="container">
+    <%- include('library.ejs')%>
+    <a href="/" class="btn btn-secondary mt-2">←Back to Product List</a>
+    <h1 class="mt-5">Add New Product</h1>
+    <form method="POST" action="/products/new">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" name="price" id="price" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="stock">In Stock:</label>
+            <input type="number" name="stock" id="stock" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Image URL:</label>
+            <input type="text" name="image" id="image" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Add Product</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/bootstrap.min.css"/>
+<%if(error) { var error;
+%>
+    <div class="alert alert-danger">
+        <%=error%>
+    </div>
+
+<%}%>
+
+<%if(message) { var message;
+%>
+<div class="alert alert-success">
+    <%=message%>
+</div>
+
+<%}%>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("/bg.jpg");
+        background-size: 100% auto;
+    }
+</style>
